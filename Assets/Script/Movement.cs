@@ -22,9 +22,9 @@ public class Movement : MonoBehaviour
         rb.AddForce(new Vector2(moveX * moveSpeed, 0f), ForceMode2D.Force);
 
         // Optional: Limit the maximum velocity
-        rb.velocity = new Vector2(
-            Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), 
-            Mathf.Clamp(rb.velocity.y, -maxSpeed, maxSpeed)
+        rb.linearVelocity = new Vector2(
+            Mathf.Clamp(rb.linearVelocity.x, -maxSpeed, maxSpeed), 
+            Mathf.Clamp(rb.linearVelocity.y, -maxSpeed, maxSpeed)
         );
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -33,11 +33,11 @@ public class Movement : MonoBehaviour
     }
     void FlipGravity()
     {
-        // ¡ÅÑº´éÒ¹¤èÒ Gravity Scale
+        // ï¿½ï¿½Ñºï¿½ï¿½Ò¹ï¿½ï¿½ï¿½ Gravity Scale
         isGravityInverted = !isGravityInverted;
         rb.gravityScale = isGravityInverted ? -Mathf.Abs(rb.gravityScale) : Mathf.Abs(rb.gravityScale);
 
-        //// ËÁØ¹ÇÑµ¶Ø (Optional: ·ÓãËéµÑÇÅÐ¤Ã¡ÅÑº´éÒ¹)
+        //// ï¿½ï¿½Ø¹ï¿½Ñµï¿½ï¿½ (Optional: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¤Ã¡ï¿½Ñºï¿½ï¿½Ò¹)
         //Vector3 scale = transform.localScale;
         //scale.y *= -1;
         //transform.localScale = scale;
