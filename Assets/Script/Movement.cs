@@ -4,7 +4,7 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 5f; // Speed of left-right movement
     public float maxSpeed = 5f; // Optional: Limit the maximum speed
-
+    private bool isGravityInverted = false;
     private Rigidbody2D rb;
 
     void Start()
@@ -26,5 +26,20 @@ public class Movement : MonoBehaviour
             Mathf.Clamp(rb.velocity.x, -maxSpeed, maxSpeed), 
             Mathf.Clamp(rb.velocity.y, -maxSpeed, maxSpeed)
         );
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            FlipGravity();
+        }
+    }
+    void FlipGravity()
+    {
+        // กลับด้านค่า Gravity Scale
+        isGravityInverted = !isGravityInverted;
+        rb.gravityScale = isGravityInverted ? -Mathf.Abs(rb.gravityScale) : Mathf.Abs(rb.gravityScale);
+
+        //// หมุนวัตถุ (Optional: ทำให้ตัวละครกลับด้าน)
+        //Vector3 scale = transform.localScale;
+        //scale.y *= -1;
+        //transform.localScale = scale;
     }
 }
