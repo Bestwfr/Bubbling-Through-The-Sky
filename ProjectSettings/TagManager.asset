@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ground
   - Fish
+  - goal
   layers:
   - Default
   - TransparentFX
