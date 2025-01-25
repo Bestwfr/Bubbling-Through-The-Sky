@@ -4,6 +4,8 @@ public class BackgroundMusic : MonoBehaviour
 {
     public AudioClip backgroundMusic; // Background music clip
     public AudioClip deathSound;      // Death sound clip
+    public float backgroundMusicVolume = 0.5f; // Volume for background music
+    public float deathSoundVolume = 0.5f;      // Volume for death sound
 
     private AudioSource audioSource;
 
@@ -12,21 +14,25 @@ public class BackgroundMusic : MonoBehaviour
         // Dynamically create an AudioSource
         audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.clip = backgroundMusic;
+        audioSource.volume = backgroundMusicVolume;
         audioSource.loop = true;  // Enable looping
-        audioSource.volume = 0.5f; // Set volume (0.0 - 1.0)
         audioSource.Play();       // Start playing background music
     }
 
     public void PlayDeathSound()
     {
-        Debug.Log("deathsound is paying");
-        // Stop current music
-        audioSource.Stop();
-
-        // Play the death sound
-        audioSource.clip = deathSound;
-        audioSource.loop = false;
-        audioSource.volume = 0.25f;
-        audioSource.Play();
+        if (deathSound != null)
+        {
+            Debug.Log("PlayDeathSound() called");
+            audioSource.Stop(); // Stop current music
+            audioSource.clip = deathSound;
+            audioSource.volume = deathSoundVolume; // Set death sound volume
+            audioSource.loop = false; // No looping for death sound
+            audioSource.Play(); // Play the death sound
+        }
+        else
+        {
+            Debug.LogError("Death sound clip is not assigned!");
+        }
     }
 }

@@ -16,6 +16,8 @@ public class SceneChangeTrigger2D : MonoBehaviour
             if (!string.IsNullOrEmpty(sceneToLoad))
             {
                 SceneManager.LoadScene(sceneToLoad);
+                playerscript.dead = 0;
+                Debug.Log(playerscript.dead);
             }
             else
             {

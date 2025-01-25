@@ -17,7 +17,7 @@ public class playerscript : MonoBehaviour
     private void Update()
     {
         // Check if player is "dead" and the conditions are met
-        if (ready && dead >= 8)
+        if (ready && dead >= 10)
         {
            FindAnyObjectByType<BackgroundMusic>().PlayDeathSound();
             
