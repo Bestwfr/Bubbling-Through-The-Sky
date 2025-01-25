@@ -1,34 +1,50 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class playerscript : MonoBehaviour
 {
-    public static bool ready = false;
-    public static float dead = 0;
-    public GameObject spawn;
-    public GameObject a1;
-    public GameObject a2;
-    public GameObject a3;
-    public GameObject a4;
-    public GameObject a5;
-    public GameObject a6;
-    public GameObject a7;
-    public GameObject a8;
-    public GameObject a9;
-    public GameObject a10;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+    public static bool ready = false;   // Indicates if the player is ready
+    public static float dead = 0;      // Tracks "death" condition (e.g., health or timer)
+
+    public GameObject deathCanvas;  // Reference to the DeathScreen script
+    private BackgroundMusic backgroundMusic;
+
+      private void Start() {
+        deathCanvas.SetActive(false);
     }
 
-    // Update is called once per frame
     private void Update()
     {
-        if (playerscript.ready = true && playerscript.dead >= 8)
+        // Check if player is "dead" and the conditions are met
+        if (ready && dead >= 8)
         {
+           FindAnyObjectByType<BackgroundMusic>().PlayDeathSound();
+            
+            // Trigger the death screen
+            TriggerDeathScreen();
+
+            // Reset dead and load the death scene
             dead = 0;
-            SceneManager.LoadScene("deadscene");
+
+            // Optional: Add a delay before loading the scene
+            StartCoroutine(LoadSceneWithDelay());
         }
     }
+
+    private void TriggerDeathScreen()
+    {
+        deathCanvas.SetActive(true);
+    }
+
+    private IEnumerator LoadSceneWithDelay()
+    {
+        // Optional: Wait for 2 seconds to let the death screen animation play
+        yield return new WaitForSeconds(2f);
+
+        // Load scene "1"
+        SceneManager.LoadScene("1");
+    }
 }
+
+

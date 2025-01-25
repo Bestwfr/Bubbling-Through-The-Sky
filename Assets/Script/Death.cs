@@ -21,20 +21,20 @@ public class Death : MonoBehaviour
             // รอจน Particle เล่นเสร็จ
             playerscript.ready = true;
             Debug.Log(playerscript.dead);
-            StartCoroutine(WaitForParticleAndRestart(effect));
+            // StartCoroutine(WaitForParticleAndRestart(effect));
         }
     }
 
-    System.Collections.IEnumerator WaitForParticleAndRestart(ParticleSystem effect)
-    {
-        // รอจน Particle Effect เล่นเสร็จ
-        while (effect.isPlaying)
-        {
-            yield return null; // รอเฟรมถัดไป
-        }
+    // System.Collections.IEnumerator WaitForParticleAndRestart(ParticleSystem effect)
+    // {
+    //     // รอจน Particle Effect เล่นเสร็จ
+    //     while (effect.isPlaying)
+    //     {
+    //         yield return null; // รอเฟรมถัดไป
+    //     }
         
-        // รีเซ็ต Scene หลัง Particle Effect เล่นเสร็จ
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+    //     // รีเซ็ต Scene หลัง Particle Effect เล่นเสร็จ
+    //     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    // }
     
 }
