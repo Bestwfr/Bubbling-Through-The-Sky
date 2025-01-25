@@ -15,17 +15,17 @@ public class Movement : MonoBehaviour
 
     void Update()
     {
-        // Horizontal input for left-right movement
-        float moveX = Input.GetAxis("Horizontal");
+        //// Horizontal input for left-right movement
+        //float moveX = Input.GetAxis("Horizontal");
 
-        // Apply force for horizontal movement
-        rb.AddForce(new Vector2(moveX * moveSpeed, 0f), ForceMode2D.Force);
+        //// Apply force for horizontal movement
+        //rb.AddForce(new Vector2(moveX * moveSpeed, 0f), ForceMode2D.Force);
 
-        // Optional: Limit the maximum velocity
-        rb.linearVelocity = new Vector2(
-            Mathf.Clamp(rb.linearVelocity.x, -maxSpeed, maxSpeed), 
-            Mathf.Clamp(rb.linearVelocity.y, -maxSpeed, maxSpeed)
-        );
+        //// Optional: Limit the maximum velocity
+        //rb.linearVelocity = new Vector2(
+        //    Mathf.Clamp(rb.linearVelocity.x, -maxSpeed, maxSpeed), 
+        //    Mathf.Clamp(rb.linearVelocity.y, -maxSpeed, maxSpeed)
+        //);
         if (Input.GetKeyDown(KeyCode.Space))
         {
             FlipGravity();
