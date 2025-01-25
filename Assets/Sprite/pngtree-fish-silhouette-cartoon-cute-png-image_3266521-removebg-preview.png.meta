@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d5d706df79082e8459724892f10f59d4
+guid: abeee1a3eb22f4f4aa7de750ec0233ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3351118814601263324
-    second: b__1_-removebg_0
+      213: 9218216647228200196
+    second: pngtree-fish-silhouette-cartoon-cute-png-image_3266521-removebg-preview_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: b__1_-removebg_0
+      name: pngtree-fish-silhouette-cartoon-cute-png-image_3266521-removebg-preview_0
       rect:
         serializedVersion: 2
-        x: 121
-        y: 53
-        width: 1756
-        height: 1008
+        x: 38
+        y: 91
+        width: 281
+        height: 179
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cd8bf609ec0918e20800000000000000
-      internalID: 3351118814601263324
+      spriteID: 40511a0533fadef70800000000000000
+      internalID: 9218216647228200196
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      b__1_-removebg_0: 3351118814601263324
+      pngtree-fish-silhouette-cartoon-cute-png-image_3266521-removebg-preview_0: 9218216647228200196
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
