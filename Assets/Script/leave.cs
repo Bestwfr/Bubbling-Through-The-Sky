@@ -3,9 +3,10 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuButton : MonoBehaviour
 {
-    // ฟังก์ชันสำหรับเปลี่ยนไปหน้า Main Menu
+    // ๏ฟฝัง๏ฟฝ๏ฟฝัน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝับ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝยน๏ฟฝหน๏ฟฝ๏ฟฝ Main Menu
     public void GoToMainMenu()
     {
-        SceneManager.LoadScene("mainmenu"); // ชื่อ Scene ที่ต้องการเปลี่ยนไป
+        Time.timeScale = 1;
+        SceneManager.LoadScene("mainmenu"); // ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ Scene ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝอง๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝยน๏ฟฝ
     }
 }
