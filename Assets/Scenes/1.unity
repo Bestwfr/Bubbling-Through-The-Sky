@@ -20714,6 +20714,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: pausebutton (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5248981565093942849, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248981565093942849, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248981565093942849, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248981565093942849, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248981565093942849, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 100.599976
+      objectReference: {fileID: 0}
+    - target: {fileID: 5248981565093942849, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 81.29999
+      objectReference: {fileID: 0}
     - target: {fileID: 5991185074943422920, guid: 80c15fb6de46c224f98d161bfb4cca1b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.082651
