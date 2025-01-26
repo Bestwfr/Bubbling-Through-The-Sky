@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc0cd67044754534d83b18db3b23aebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 1580841682}
   followSpeed: 20
   followDistance: 0
 --- !u!50 &25565863
@@ -1034,6 +1034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &88768210
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -4207,6 +4208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &414005017
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -5774,6 +5776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &627072702
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -8114,6 +8117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &906229004
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -9414,6 +9418,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &1023123650
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -12419,6 +12424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &1445108377
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -13877,6 +13883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 20
+  dustVFXPrefab: {fileID: 4717366178350257048, guid: 17a8366200f459d449bdfbc82b00be35, type: 3}
 --- !u!96 &1580841684
 TrailRenderer:
   serializedVersion: 3
@@ -16153,6 +16160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &1905302377
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -16835,6 +16843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &1962948048
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -19628,6 +19637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &2127522756
 SpringJoint2D:
   m_ObjectHideFlags: 0
@@ -20023,6 +20033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!231 &2141232096
 SpringJoint2D:
   m_ObjectHideFlags: 0

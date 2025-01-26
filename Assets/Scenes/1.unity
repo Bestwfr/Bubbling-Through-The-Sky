@@ -1195,6 +1195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &149812490
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3682,6 +3683,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &484800111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4990,6 +4992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &613507325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6457,6 +6460,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &719868728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8125,6 +8129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &946105462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9525,6 +9530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &1057832006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11260,6 +11266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 20
+  dustVFXPrefab: {fileID: 4717366178350257048, guid: 17a8366200f459d449bdfbc82b00be35, type: 3}
 --- !u!114 &1203979434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12127,6 +12134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &1296381038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13840,6 +13848,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &1407952816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14322,6 +14331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &1440193900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18778,6 +18788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boostForce: 10
+  dustVFXPrefab: {fileID: 0}
 --- !u!114 &2085758687
 MonoBehaviour:
   m_ObjectHideFlags: 0
